@@ -13,20 +13,26 @@ header {
 .imageHeader {
   background-image: url("images/old-1130739_1920.jpg");
   width: 100%;
-  height: 327px;
+  height: 100vh;
   background-size: cover;
   float: left;
 }
 
+.blocHeader {
+  border: 2px solid white;
+  width: 600px;
+  margin: auto;
+  margin-top: 200px;
+  height: 200px;
+}
 .textHeader {
-  padding-top: 130px;
   color: white;
   text-align: center;
-  font-size: 18px;
+  font-size: 60px;
 }
 
 .textHeader2 {
-  font-size: 14px;
+  font-size: 48px;
 }
 
 nav {
@@ -35,6 +41,7 @@ nav {
   list-style: none;
   background-color: #303F9F;
   float: left;
+  text-transform: uppercase;
 }
 
 ul {
@@ -45,8 +52,8 @@ li {
   display: inline-block;
   line-height: 50px;
   color: white;
-  width: 12.5%;
-  margin-left: 16.2%;
+  width: 24%;
+  text-align: center;
 }
 
 li:first-of-type {
@@ -57,8 +64,8 @@ li:first-of-type {
 
 .wrapper {
   margin: auto;
-  width: 75%;
-  margin-top: 477px;
+  width: 1000px;
+  margin-top: 115vh;
 }
 
 .photoIntro {
@@ -84,7 +91,8 @@ li:first-of-type {
   width: 120px;
   height: 120px;
   float: left;
-  margin-left: 33.1%;
+  margin-left: 320px;
+  cursor: default;
 }
 
 .bigCircle {
@@ -132,15 +140,180 @@ li:first-of-type {
 	border-radius: 50px;
 }
 
+.smallCircleText {
+  line-height: 100px;
+  text-align: center;
+}
+
+.bigCircleText:hover, .smallCircleText:hover {
+  color: white;
+}
+
 .codeSecondarySkills .smallCircleDiv {
   float: left;
-  margin-left: 20.82%;
+  margin-left: 200px;
 }
 
 .codeSecondarySkills .smallCircleDiv:first-child {
-  margin-left: 0px;
+  margin-left: 0%;
 }
 
-.designSecondarySkills, .languageSecondarySkills {
+.designSecondarySkills .smallCircleDiv:first-child, .languageSecondarySkills .smallCircleDiv:first-child {
+  margin-left: 25%;
+}
+
+.designSecondarySkills {
+  width: 100%;
+  float: left;
   display: none;
+}
+
+
+.languageSecondarySkills {
+  width: 100%;
+  float: left;
+  display: none;
+}
+.designSecondarySkills .smallCircleDiv, .languageSecondarySkills .smallCircleDiv  {
+  float: left;
+  margin-left: 30%;
+}
+
+.smallCircleDef {
+  margin-top : 10px;
+  text-align: justify;
+}
+
+.barreFormation {
+  width: 700px;
+  background-image: url("images/barre-recherche-2.jpg");
+  height: 100px;
+  margin: 380px 150px 0 150px;
+  background-repeat: no-repeat;}
+
+.formationButton {
+  width: 26px;
+  height: 26px;
+  background-color: #FF9800;
+  -moz-border-radius: 13px;
+  -webkit-border-radius: 13px;
+  border-radius: 13px;
+}
+
+.formationButtonDiv {
+  margin-left: 150px;
+  float: left;
+  margin-top: 16px;
+}
+
+.formationButton:hover {
+  background-color: black;
+}
+
+.contenuFormation1, .contenuFormation2, .contenuFormation3 {
+  width: 100%
+}
+
+.imageFormation1 {
+  background-image: url("images/forest-483207_1920.jpg");
+  width: 70;
+  margin: auto;
+  height: 300px;
+}
+
+.imageFormation2 {
+  background-image: url("images/floor-1256804_1920.jpg");
+  width: 70;
+  margin: auto;
+  height: 300px;
+}
+
+.imageFormation3 {
+  background-image: url("images/old-1130739_1920.jpg");
+  width: 70;
+  margin: auto;
+  height: 300px;
+}
+
+.textFormation {
+  margin-top: 30px;
+}
+
+.contenuFormation2 {
+  display: none;
+}
+
+.contenuFormation3 {
+  display : none;
+}
+
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  bottom: 0;
+  height: 650px;
+  background-color: #3F51B5;
+  position: relative;
+  float: left;
+  margin-left: -10px;
+}
+
+.footerWrapper {
+  width: 1000px;
+  margin: auto;
+}
+
+form {
+  margin: 30px 0px 0px 0px;
+  width: 650px;
+  float: left;
+  font-size: 24px;
+}
+
+.lignForm {
+  width: 100%;
+}
+
+input, textarea {
+  width: 500px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 45px;
+  margin: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.footerWrapper h1, .footerWrapper h2 {
+  text-align: center;
+  color: white;
+}
+
+.footerWrapper h2 {
+  font-size: 17px;
+}
+
+.infoContact {
+  margin-top : 30px;
+  width: 349px;
+  float: left;
+  font-size: 24px;
+}
+
+.messageForm {
+  height: 200px;
+  line-height : 10px;
+  padding-top: 10px;
+}
+
+.submitForm {
+  width: 515px;
+  background-color: #FF9800;
+  border: 0px;
+  color: white;
+  line-height: 35px;
+  font-size: 25px;
+  height: 55px;
 }

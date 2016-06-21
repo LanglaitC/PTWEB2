@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <link media="screen" rel="stylesheet" href="style/reset.css">
     <link media="screen" rel="stylesheet" href="style/style.css">
+    <link media="screen" rel="stylesheet" href="style/animate.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <header>
-    <div class="imageHeader"><p class="textHeader">Corentin Langlait<br> <span class="textHeader2">Dévellopeur web</span></p></div>
+    <div class="imageHeader"><div class="blocHeader"><p class="textHeader">Corentin Langlait<br> <span class="textHeader2">Dévellopeur web</span></p></div></div>
     <nav>
       <ul>
         <li>Présentation</li>
@@ -18,30 +19,83 @@
   </header>
   <body>
     <div class="wrapper">
+
       <!-- INTRODUCTION -->
+
       <div class="photoIntro"></div>
       <div class='textIntro'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae consectetur labore velit maiores natus dicta animi laborum voluptatibus nihil, commodi numquam nobis harum cum placeat vero odit. Sequi, accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae illum cupiditate vel quisquam, quasi aliquid quis itaque ullam deserunt sint. Aliquid adipisci vel voluptas culpa molestias, reiciendis totam cum atque.
       </div>
+
+      <!-- COMPETENCES -->
+
       <div class="primarySkills">
-        <div class="bigCircleDiv"><div class="bigCircle"><div class="bigCircleText"><i class="material-icons md-48">code</i></div></div></div>
-        <div class="bigCircleDiv"><div class="bigCircle"><div class="bigCircleText"><i class="material-icons md-48">palette</i></div></div></div>
-        <div class="bigCircleDiv"><div class="bigCircle"><div class="bigCircleText"><i class="material-icons md-48">language</i></div></div></div>
+        <div class="bigCircleDiv"><div class="bigCircle" id="bigCircle1"><div class="bigCircleText"><i class="material-icons md-48">code</i></div></div></div>
+        <div class="bigCircleDiv"><div class="bigCircle" id="bigCircle2"><div class="bigCircleText"><i class="material-icons md-48">palette</i></div></div></div>
+        <div class="bigCircleDiv"><div class="bigCircle" id="bigCircle3"><div class="bigCircleText"><i class="material-icons md-48">language</i></div></div></div>
       </div>
-      <div class="codeSecondarySkills">
-        <div class="smallCircleDiv"><div class="smallCircle"></div><div class="smallCircleText"></div></div>
-        <div class="smallCircleDiv"><div class="smallCircle"></div><div class="smallCircleText"></div></div>
-        <div class="smallCircleDiv"><div class="smallCircle"></div><div class="smallCircleText"></div></div>
-        <div class="smallCircleDiv"><div class="smallCircle"></div><div class="smallCircleText"></div></div>
+      <div class="codeSecondarySkills" id="codeSkills">
+        <div class="smallCircleDiv animated fadeIn"><div class="smallCircle"><div class="smallCircleText">SQL</div></div><div class="smallCircleDef">Lorem ipsum fnjadc,akzej vaieofk ,zdhiacj oakedvuhiro fezb fivo</div></div>
+        <div class="smallCircleDiv animated fadeIn"><div class="smallCircle"><div class="smallCircleText">PHP</div></div><div class="smallCircleDef animated">Lorem ipsum fnjadc,akzej vaieofk ,zdhiacj oakedvuhiro fezb fivo</div></div>
+        <div class="smallCircleDiv animated fadeIn"><div class="smallCircle"><div class="smallCircleText">HTML/CSS</div></div><div class="smallCircleDef ">Lorem ipsum fnjadc,akzej vaieofk ,zdhiacj oakedvuhiro fezb fivo</div></div>
+        <div class="smallCircleDiv animated fadeIn"><div class="smallCircle"><div class="smallCircleText">JAVASCRIPT</div></div><div class="smallCircleDef">Lorem ipsum fnjadc,akzej vaieofk ,zdhiacj oakedvuhiro fezb fivo</div></div>
       </div>
-      <div class="designSecondarySkills">
-        <div class="smallCircleDiv"><div class="smallCircle"></div><div class="smallCircleText"></div></div>
-        <div class="smallCircleDiv"><div class="smallCircle"></div><div class="smallCircleText"></div></div>
+      <div class="designSecondarySkills" id="designSkills">
+        <div class="smallCircleDiv animated fadeIn"><div class="smallCircle"><div class="smallCircleText">Photoshop</div></div><div class="smallCircleDef">Lorem ipsum fnjadc,akzej vaieofk ,zdhiacj oakedvuhiro fezb fivo</div></div>
+        <div class="smallCircleDiv animated fadeIn"><div class="smallCircle"><div class="smallCircleText">Illustrator</div></div><div class="smallCircleDef">Lorem ipsum fnjadc,akzej vaieofk ,zdhiacj oakedvuhiro fezb fivo</div></div>
       </div>
-      <div class="languageSecondarySkills">
-        <div class="smallCircleDiv"><div class="smallCircle"></div><div class="smallCircleText"></div></div>
-        <div class="smallCircleDiv"><div class="smallCircle"></div><div class="smallCircleText"></div></div>
+      <div class="languageSecondarySkills" id="languageSkills">
+        <div class="smallCircleDiv animated fadeIn"><div class="smallCircle"><div class="smallCircleText">Anglais</div></div><div class="smallCircleDef">Lorem ipsum fnjadc,akzej vaieofk ,zdhiacj oakedvuhiro fezb fivo</div></div>
+        <div class="smallCircleDiv animated fadeIn"><div class="smallCircle"><div class="smallCircleText">Allemand</div></div><div class="smallCircleDef">Lorem ipsum fnjadc,akzej vaieofk ,zdhiacj oakedvuhiro fezb fivo</div></div>
       </div>
+
+      <!--FORMATION-->
+
+      <div class='barreFormation'>
+        <div class='formationButtonDiv' id="formButton1"><div class="formationDate">2014</div><div class="formationButton" ></div></div>
+        <div class='formationButtonDiv' id="formButton2"><div class="formationDate">2015</div><div class="formationButton"></div></div>
+        <div class='formationButtonDiv' id="formButton3"><div class="formationDate">2016</div><div class="formationButton"></div></div>
+      </div>
+      <div class='contenuFormation1' id="contentForm1">
+        <div class="imageFormation1"></div>
+        <div class="textFormation" >Sainte Philo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quas odit temporibus animi provident laudantium, cupiditate id. Hic nesciunt, illo omnis, iusto repudiandae vero quaerat rem reiciendis vel tempore consequatur.</div>
+      </div>
+      <div class='contenuFormation2' id="contentForm2">
+        <div class="imageFormation2"></div>
+        <div class="textFormation">Fac de médecine. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolorum esse perspiciatis, atque, repellat id recusandae deleniti ipsum unde dolorem molestiae sit a sint veritatis, dolore natus consequuntur fuga quibusdam!</div>
+      </div>
+      <div class='contenuFormation3' id="contentForm3">
+        <div class="imageFormation3"></div>
+        <div class="textFormation">Dut Informatique. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate neque adipisci harum quae, vitae quod sunt quos repudiandae, velit hic voluptatum sint nesciunt nulla deleniti unde fugiat laborum placeat quam.</div>
+      </div>
+
+    <!--PORTFOLIO-->
+
+    <h1>Portfolio<h1>
+
+
+
     </div>
   </body>
+
+    <!--FORMULAIRE DE CONTACT -->
+
+    <footer>
+      <div class="footerWrapper">
+        <h1>CONTACTEZ MOI</h1>
+        <h2>Contactez moi si mon CV vous a plu</h2>
+        <form>
+          <input type="text" name="nom" placeholder="Nom">
+          <input type="mail" name="mail" placeholder="Mail">
+          <textarea type="text" name="message" placeholder="Votre message.." class="messageForm"></textarea>
+          <input type="submit" value = "Envoyer" class="submitForm">
+        </form>
+      </div>
+      <div class="infoContact">
+        <p class='infoSpan'><i class="material-icons md-36">home</i> 67500 Haguenau</p>
+        <p class='infoSpan'><i class="material-icons md-36">mail</i> corentin.langlait@gmail.com</p>
+        <p class='infoSpan'><i class="material-icons md-36">phone</i> 06 44 94 01 51</p>
+      </div>
+  </footer>
+  <script src="style/Javascript/Script.js"></script>
 </html>

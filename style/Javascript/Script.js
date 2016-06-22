@@ -31,19 +31,31 @@ var formButton1 = document.getElementById('formButton1'),
       });
 
     bigCircle1.addEventListener('click', function() {
+      if (getComputedStyle(codeSkills).display == 'none') {
       codeSkills.style.display = 'block';
       designSkills.style.display = 'none';
       languageSkills.style.display = 'none';
+    } else {
+      codeSkills.style.display = 'none';
+    }
     });
 
     bigCircle2.addEventListener('click', function() {
+      if (getComputedStyle(designSkills).display == 'none') {
       codeSkills.style.display = 'none';
       designSkills.style.display = 'block';
       languageSkills.style.display = 'none';
+    } else {
+      designSkills.style.display = 'none';
+    }
     });
 
     bigCircle3.addEventListener('click', function() {
+      if (getComputedStyle(languageSkills).display == 'none') {
       codeSkills.style.display = 'none';
       designSkills.style.display = 'none';
       languageSkills.style.display = 'block';
+    } else {
+      languageSkills.style.display = 'none';
+    }
     });

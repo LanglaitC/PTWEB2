@@ -5,35 +5,45 @@
     <link media="screen" rel="stylesheet" href="style/reset.css">
     <link media="screen" rel="stylesheet" href="style/style.css">
     <link media="screen" rel="stylesheet" href="style/animate.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <header>
-    <div class="imageHeader"><div class="blocHeader"><p class="textHeader">Corentin Langlait<br> <span class="textHeader2">Dévellopeur web</span></p></div></div>
+    <div class="imageHeader">
+      <div class="blocHeader"><p class="textHeader">Corentin Langlait<br> <span class="textHeader2">Dévellopeur web</span></p></div>
+      <div class="download"><p>Télécharger mon CV</p><a href="www.9GAG.com"><i class="material-icons md-24">file_download</i><a></div>
+
+  </div>
+
     <nav>
       <ul>
-        <li>Présentation</li>
-        <li>Compétences</li>
-        <li>Mon parcours</li>
-        <li>Portfolio</li>
+        <li>me contacter</li>
+        <li>compétences</li>
+        <li>mon parcours</li>
+        <li>portfolio</li>
       </ul>
   </header>
   <body>
     <div class="wrapper">
 
       <!-- INTRODUCTION -->
-
+      <div class="intro">
       <div class="photoIntro"></div>
       <div class='textIntro'>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae consectetur labore velit maiores natus dicta animi laborum voluptatibus nihil, commodi numquam nobis harum cum placeat vero odit. Sequi, accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae illum cupiditate vel quisquam, quasi aliquid quis itaque ullam deserunt sint. Aliquid adipisci vel voluptas culpa molestias, reiciendis totam cum atque.
       </div>
+    </div>
 
       <!-- COMPETENCES -->
-
+      <div class="skills">
       <div class="primarySkills">
         <div class="bigCircleDiv"><div class="bigCircle" id="bigCircle1"><div class="bigCircleText"><i class="material-icons md-48">code</i></div></div></div>
         <div class="bigCircleDiv"><div class="bigCircle" id="bigCircle2"><div class="bigCircleText"><i class="material-icons md-48">palette</i></div></div></div>
         <div class="bigCircleDiv"><div class="bigCircle" id="bigCircle3"><div class="bigCircleText"><i class="material-icons md-48">language</i></div></div></div>
       </div>
+      </div>
+      <div class="secondarySkills">
       <div class="codeSecondarySkills" id="codeSkills">
         <div class="smallCircleDiv animated fadeIn"><div class="smallCircle"><div class="smallCircleText">SQL</div></div><div class="smallCircleDef">Lorem ipsum fnjadc,akzej vaieofk ,zdhiacj oakedvuhiro fezb fivo</div></div>
         <div class="smallCircleDiv animated fadeIn"><div class="smallCircle"><div class="smallCircleText">PHP</div></div><div class="smallCircleDef animated">Lorem ipsum fnjadc,akzej vaieofk ,zdhiacj oakedvuhiro fezb fivo</div></div>
@@ -48,9 +58,11 @@
         <div class="smallCircleDiv animated fadeIn"><div class="smallCircle"><div class="smallCircleText">Anglais</div></div><div class="smallCircleDef">Lorem ipsum fnjadc,akzej vaieofk ,zdhiacj oakedvuhiro fezb fivo</div></div>
         <div class="smallCircleDiv animated fadeIn"><div class="smallCircle"><div class="smallCircleText">Allemand</div></div><div class="smallCircleDef">Lorem ipsum fnjadc,akzej vaieofk ,zdhiacj oakedvuhiro fezb fivo</div></div>
       </div>
+      </div>
 
       <!--FORMATION-->
-
+      <h1>Mon Parcours</h1>
+      <div class="formation">
       <div class='barreFormation'>
         <div class='formationButtonDiv' id="formButton1"><div class="formationDate">2014</div><div class="formationButton" ></div></div>
         <div class='formationButtonDiv' id="formButton2"><div class="formationDate">2015</div><div class="formationButton"></div></div>
@@ -68,22 +80,48 @@
         <div class="imageFormation3"></div>
         <div class="textFormation">Dut Informatique. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate neque adipisci harum quae, vitae quod sunt quos repudiandae, velit hic voluptatum sint nesciunt nulla deleniti unde fugiat laborum placeat quam.</div>
       </div>
+      </div>
+
 
     <!--PORTFOLIO-->
-
-    <h1>Portfolio<h1>
-
-
-
-    </div>
-  </body>
-
-    <!--FORMULAIRE DE CONTACT -->
-
-    <footer>
+<h1>Mes réalisations</h1>
+  <div class="portfolio flex">
+    <a href="style/images/old-1130739_1920.jpg" target="_blank">
+      <figure class="port1">
+        <figcaption>Image1</figcaption>
+      </figure>
+    </a>
+    <a href="style/images/forest-483207_1920.jpg" target="_blank">
+      <figure class="port2">
+        <figcaption>Image2</figcaption>
+      </figure>
+    </a>
+    <a href="style/images/forest-483207_1920.jpg" target="_blank">
+      <figure class="port3">
+        <figcaption>Image3</figcaption>
+      </figure>
+    </a>
+    <a href="style/images/forest-483207_1920.jpg" target="_blank">
+      <figure class="port4">
+        <figcaption>Image4</figcaption>
+      </figure>
+    </a>
+    <a href="style/images/forest-483207_1920.jpg" target="_blank">
+      <figure class="port5">
+        <figcaption>Image5</figcaption>
+      </figure>
+    </a>
+    <a href="style/images/forest-483207_1920.jpg" target="_blank">
+      <figure class="port6">
+        <figcaption>Image6</figcaption>
+      </figure>
+    </a>
+  </div>
+  </div>
+</body>
+    <!-- PARTIE CONTACT -->
+    <div class="contact">
       <div class="footerWrapper">
-        <h1>CONTACTEZ MOI</h1>
-        <h2>Contactez moi si mon CV vous a plu</h2>
         <form>
           <input type="text" name="nom" placeholder="Nom">
           <input type="mail" name="mail" placeholder="Mail">
@@ -92,10 +130,18 @@
         </form>
       </div>
       <div class="infoContact">
+        <div class="menuFooter">
+          <h1>CONTACTEZ MOI</h1>
+          <h2>Contactez moi si mon CV vous a plu</h2>
+        </div>
         <p class='infoSpan'><i class="material-icons md-36">home</i> 67500 Haguenau</p>
         <p class='infoSpan'><i class="material-icons md-36">mail</i> corentin.langlait@gmail.com</p>
         <p class='infoSpan'><i class="material-icons md-36">phone</i> 06 44 94 01 51</p>
       </div>
-  </footer>
+    </div>
+
+<footer>
+
+</footer>
   <script src="style/Javascript/Script.js"></script>
 </html>

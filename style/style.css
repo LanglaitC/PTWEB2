@@ -18,20 +18,11 @@ header {
   float: left;
 }
 
-.download {
-  color: white;
-  margin: auto;
-  width: 400px;
-  text-align: center;
-  margin-top: 170px;
-  font-size: 25px;
-}
-
 .material-icons.md-24 { font-size: 40px;
-color: white;}
+color: black;}
 
 .material-icons.md-24:hover {
-  color: black;
+  color: #303F9F;
 }
 
 .blocHeader {
@@ -87,9 +78,9 @@ li:first-of-type {
 }
 
 .photoIntro {
-  background-image: url("images/Photo le 08-06-2016 à 11.172.jpg");
-  width: 388px;
-  height: 500px;
+  background-image: url("images/photoIntro.jpg");
+  width: 400px;
+  height: 460px;
   background-repeat: no-repeat;
   float: left;
 }
@@ -105,19 +96,28 @@ li:first-of-type {
 }
 
 .textIntro {
-  width: 360px;
-  height: 500px;
-  margin: 50px 0px 50px 50px;
+  width: 350px;
+  height: 250px;
+  margin: 0px 0px 50px 20px;
   font-size: 18px;
   float: left;
   line-height: 25px;
   text-align: justify;
 }
 
+.download {
+  width: 350px;
+  text-align: center;
+  font-size: 20px;
+  height: 160px;
+  float: left;
+  margin-left: 20px
+}
+
 .intro {
   float: left;
   width: 800px;
-  margin: 0px 100px 0px 100px;
+  margin: 40px 100px 50px 100px;
 }
 
 /* COMPETENCES */
@@ -401,7 +401,6 @@ li:first-of-type {
   height: 500px;
   background-color: #3F51B5;
   float: left;
-  left: 0;
   font-family: 'Titillium Web', sans-serif;
 
 }
@@ -474,6 +473,14 @@ input, textarea {
   font-size: 25px;
   height: 55px;
   cursor: pointer;
+}
+
+footer {
+  float: left;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  width: 100%;
 }
 
 @media screen and (max-width:1000px) {

@@ -10,7 +10,8 @@ var formButton1 = document.getElementById('formButton1'),
     bigCircle3 = document.getElementById('bigCircle3'),
     codeSkills = document.getElementById('codeSkills'),
     designSkills = document.getElementById('designSkills'),
-    languageSkills = document.getElementById('languageSkills');
+    languageSkills = document.getElementById('languageSkills'),
+    bigCircleDiv1= document.getElementById('bigCircleDiv1');
 
     formButton1.addEventListener('click', function() {
            contentForm1.style.display = 'block';
@@ -59,3 +60,9 @@ var formButton1 = document.getElementById('formButton1'),
       languageSkills.style.display = 'none';
     }
     });
+
+    if (getComputedStyle(codeSkills).display == 'none' || codeSkills.style.display == 'none') {
+    bigCircleDiv1.className += " animated infinite bounce";
+  }
+
+    

@@ -11,17 +11,25 @@ header {
 }
 
 .imageHeader {
-  background-image: url("images/old-1130739_1920.jpg");
+  background-image: url("images/technology-785742_1920.jpg");
   width: 100%;
   height: 100vh;
   background-size: cover;
   float: left;
 }
 
-.material-icons.md-24 { font-size: 40px;
+.material-icons.md-24{ font-size: 40px;
 color: black;}
 
 .material-icons.md-24:hover {
+  color: #303F9F;
+}
+
+.download a {
+  color: black
+}
+
+.download a:hover {
   color: #303F9F;
 }
 
@@ -29,7 +37,7 @@ color: black;}
   border: 2px solid white;
   width: 600px;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 35vh;
   height: 200px;
 }
 
@@ -101,17 +109,21 @@ li:first-of-type {
   margin: 0px 0px 50px 20px;
   font-size: 18px;
   float: left;
-  line-height: 25px;
+  line-height: 28px;
   text-align: justify;
+}
+
+.textIntro a {
+  color: blue;
 }
 
 .download {
   width: 350px;
   text-align: center;
   font-size: 20px;
-  height: 160px;
+  height: 120px;
   float: left;
-  margin-left: 20px
+  margin: 40px 0 0 20px;
 }
 
 .intro {
@@ -240,6 +252,7 @@ li:first-of-type {
   background-position: center;
   height: 100px;
   margin: auto;
+  margin-bottom: 50px;
   background-repeat: no-repeat;
   float: left;
 }
@@ -257,6 +270,7 @@ li:first-of-type {
 .formationButtonDiv:first-child {
   margin-left: 300px;
 }
+
 .formationButtonDiv {
   margin-left: 150px;
   float: left;
@@ -264,6 +278,21 @@ li:first-of-type {
   float: left;
   cursor: pointer;
 }
+
+#button3 {
+  background-color: black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color : #FF9800;
+}
+
+
 
 .formationButton:hover {
   background-color: black;
@@ -277,32 +306,33 @@ li:first-of-type {
 }
 
 .imageFormation1 {
-  background-image: url("images/forest-483207_1920.jpg");
-  width: 70;
+  background-image: url("images/banniereLycee.png");
+  width: 1000px;
   margin: auto;
-  height: 300px;
+  height: 200px;
 }
 
 .imageFormation2 {
-  background-image: url("images/floor-1256804_1920.jpg");
-  width: 70;
+  background-image: url("images/BanniereFac.png");
+  width: 1000px;
   margin: auto;
-  height: 300px;
+  height: 200px;
 }
 
 .imageFormation3 {
-  background-image: url("images/old-1130739_1920.jpg");
-  width: 70;
+  background-image: url("images/banniereIut.png");
+  width: 1000px;
   margin: auto;
-  height: 300px;
+  height: 200px;
 }
 
 .textFormation {
-  margin-top: 30px;
+  width: 600px;
+  margin: 70px 200px 0 200px;
 }
 
 .contenuFormation1 {
-  display: block;
+  display: none;
 }
 
 .contenuFormation2 {
@@ -310,7 +340,7 @@ li:first-of-type {
 }
 
 .contenuFormation3 {
-  display : none;
+  display : block;
 }
 
 /* PORTFOLIO */
@@ -361,6 +391,11 @@ li:first-of-type {
 
 .flex-item {
 	flex: 1 0 auto;
+}
+
+h1 {
+  display: inline-block;
+  width: 100%;
 }
 
 /* IMAGE PORTFOLIO */
@@ -444,7 +479,7 @@ input, textarea {
 
 .menuFooter {
     color: white;
-    margin: 50px 0px 130px 0px;
+    margin: 50px 0px 70px 0px;
 }
 
 .footerWrapper h2 {
@@ -483,6 +518,127 @@ footer {
   width: 100%;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (min-width: 760px) and (max-width: 1000px) {
+  .wrapper {
+    width: 800px;
+  }
 
+  .formulaireContact {
+    width: 760px;
+  }
+
+  input, textarea {
+    width: 720px;
+  }
+
+  .contact {
+    height: 680px;
+  }
+
+  .submitForm {
+    width: 735px;
+  }
+
+  .infoContact {
+    width: 760px;
+    float: left;
+  }
+
+  .ligneContact {
+    width: 350px;
+    float: left;
+    padding-left: 100px;
+  }
+
+  .menuFooter {
+    width: 300px;
+    float: left;
+    margin: 0px;
+  }
+
+  .footerWrapper {
+    width: 760px;
+    margin: auto;
+    height: 680px;
+  }
+
+  .infoContact {
+    width: 800px;
+  }
+
+  .intro {
+    margin: auto;
+  }
+
+  .textIntro, .download {
+    width: 350px;
+  }
+
+  .bigCircleDiv {
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin-left: 190px;
+    cursor: pointer;
+  }
+
+  .designSecondarySkills .smallCircleDiv:first-child, .languageSecondarySkills .smallCircleDiv:first-child {
+    margin-left: 160px;
+  }
+
+  .designSecondarySkills .smallCircleDiv, .languageSecondarySkills .smallCircleDiv  {
+    float: left;
+    margin-left: 220px;
+  }
+
+  .codeSecondarySkills .smallCircleDiv {
+    float: left;
+    margin-left: 113px;
+  }
+
+  .codeSecondarySkills .smallCircleDiv:first-child {
+    margin-left: 0%;
+  }
+
+  .barreFormation {
+    background-image: url("images/barreDeRechercheTablette.jpg");
+    margin: 0 100px 0 100px;
+    width: 600px;
+  }
+
+  .formationButtonDiv:first-child {
+    margin-left: 100px;
+  }
+
+  .formationButtonDiv {
+    margin-left: 150px;
+    float: left;
+    margin-top: 20px;
+    float: left;
+    cursor: pointer;
+  }
+
+  .imageFormation1 {
+    background-image: url("images/banniereLyceePetite.png");
+    width: 800px;
+    margin:0;
+  }
+
+  .imageFormation2 {
+    background-image: url("images/banniereFacPetite.png");
+    width: 800px;
+    margin:0;
+  }
+
+  .imageFormation3 {
+    background-image: url("images/banniereIutPetite.png");
+    width: 800px;
+    background-position: center;
+    margin:0;
+  }
+
+  .textFormation {
+    width: 600px;
+    margin: 30px 100px 0 100px;
+  }
 }
